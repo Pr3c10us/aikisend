@@ -96,6 +96,9 @@ export default function RootLayout({ children }) {
         lang="en"
         className="h-full scrollbar-thin scrollbar-thumb-gray-500"
       >
+        <head>
+          <meta name="base:app_id" content="6991453f7ca07f5750bbda29" />
+        </head>
         <body className=" h-full font-farro">
           <Toaster position="bottom-right" reverseOrder={false} />
           <WagmiConfig config={wagmiConfig}>{children}</WagmiConfig>
